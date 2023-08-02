@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para">This is paragraph</p>
+
+    <h1 class="heading1">This is heading1</h1>
+
+    <h2 class="heading1">This is heading2</h2>
+
+    <h3>This is heading3</h3>
+    <h3>This is second heading3</h3>
+    <h3>This is third heading3</h3>
+
+    <script>
+            // Id should be unique
+            const para= document.getElementById("para").innerHTML;
+            alert(para);
+
+
+            //classes can contain more than 1 matching. so we need to use getElementsByClassName.
+            const heading1 = document.getElementsByClassName("heading1")
+            alert(heading1[0].innerHTML); // this is heading1
+            alert(heading1[1].innerHTML); // this heading2
+
+            const heading3 = document.getElementsByTagName("h3")
+            alert(heading3[0].innerHTML) // this is heading2
+            alert(heading3[1].innerHTML) // this is second heading3
+            alert(heading3[2].innerHTML) // this is third heading3
+    </script>
+
+
+</body>
+</html>

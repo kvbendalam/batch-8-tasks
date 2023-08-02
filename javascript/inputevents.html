@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onSubmit="inputData()">  
+        <input type="text" id = "i" placeholder="Enter your username here" />
+        <input type="password" id="p" placeholder ="Enter your password here"/>
+        <input type="submit" value="submit"/>
+    </form>
+
+
+    <p onmouseover="mouse()" id="para">This is para</p>
+
+    <p onmousedown= "moused()" id= "para1"> This is another paragraph</p>
+
+    <p onmouseout="mouseo()" id="para2" style="background-color: red;">This is para2</p> 
+
+
+    <script>
+        function inputData(){
+            var i = document.getElementById("i").value;
+            console.log(i);
+
+            var p = document.getElementById("p").value;
+            console.log(p)
+        }
+
+
+        function mouse(){
+            const para = document.getElementById('para')
+            para.style.backgroundColor ="blue";
+            para.style.fontSize = "48px";
+            para.style.border = "1px solid black"
+        }
+
+        function moused(){
+            const para = document.getElementById('para1')
+            para.style.backgroundColor ="blue";
+            para.style.fontSize = "48px";
+            para.style.border = "1px solid black"
+        }
+
+        function mouseo(){
+            const para = document.getElementById('para2')
+            para.style.backgroundColor ="blue";
+            para.style.fontSize = "48px";
+            para.style.border = "1px solid black"
+        }
+    </script>
+</body>
+</html>

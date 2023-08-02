@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            var marks = [99,98,89,78,65,89];
+
+            //Objects
+
+            var obj = {
+                "Telugu":99,
+                "Hindi":98,
+                "English":89,
+                "Maths":78,
+                "Science":65,
+                "Social":89,
+                totalMarks : function(){
+                    return this.Telugu + this.Hindi+this.English+this.Maths+this.Science+this.Social;
+                }
+            }
+
+            console.log(obj);
+            console.log("Telugu Marks:", obj["Telugu"]);
+            console.log("English Marks:", obj["English"]);
+            var sum = obj.totalMarks() //518
+            console.log("Total Marks", sum);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnerHTML</title>
+</head>
+<body>
+    <p id="para">This is paragraph</p>
+
+    <div id="d"> This is div</div>
+
+    <span class="s">This is span</span>
+
+    <span class="s">This is second span</span>
+
+
+    <h1>This is heading</h1>
+
+    <h1>This is second heading</h1>
+
+    <script>
+        var p = document.getElementById("para");
+        console.log(p.innerHTML)
+
+        var div = document.getElementById("d");
+        console.log(div.innerHTML)
+
+        var span = document.getElementsByClassName("s")
+        
+        console.log(span[0].innerHTML)
+
+        console.log(span[1].innerHTML)
+
+        var h1 = document.getElementsByTagName("h1")
+        console.log(h1[0].innerHTML);
+        console.log(h1[1].innerHTML)
+
+    </script>
+</body>
+</html>
+
