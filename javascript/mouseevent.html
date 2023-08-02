@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para" onmouseover="selectPara()"> This is para</p>
+
+    <h1 onmouseup="mouseUp()">h1</h1>
+
+    <h2 onmousedown="mouseDown()">h2</h2>
+
+    <h3 onmouseleave="mouseLeave()">h3</h3>
+
+    <script>
+        var para = document.getElementById("para")
+
+        function selectPara(){
+            console.log("Para is selected")
+        }
+
+        function mouseUp(){
+            console.log("Mouse up event")
+        }
+
+        function mouseDown(){
+            console.log("mouse down")
+        }
+
+        function mouseLeave(){
+            console.log("mouse leave")
+        }
+    </script>
+</body>
+</html>

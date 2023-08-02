@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Username</label>
+    <input type="text" id="username" onblur="toUpperCase()"/>
+
+
+    <select onchange="selectCar()" id="car">
+        <option>BMW</option>
+        <option>VW</option>
+        <option>Benz</option>
+    </select>
+
+    <input type="text" id="password" onfocus="backgroundChange()"/>
+
+    <input id="select" onselect="paraSelect()" value="some value"/>
+
+   
+    <form onsubmit="submitFunction()">
+        Enter name: <input type="text" name="fname">
+        <input type="submit" value="Submit">
+    </form>
+  
+
+    <script>
+        function toUpperCase(){
+            var username = document.getElementById("username");
+            username.value = username.value.toUpperCase();
+        }
+
+        function selectCar(){
+            var car = document.getElementById("car")
+            console.log(car.value);
+        }
+
+        function backgroundChange(){
+            var password = document.getElementById("password");
+            password.style.backgroundColor = "blue";
+        }
+
+        function paraSelect(){
+            alert("Input is selected")
+        }
+
+        function submitFunction(){
+            alert("Form is submitted")
+        }
+
+        
+    </script>
+</body>
+</html>

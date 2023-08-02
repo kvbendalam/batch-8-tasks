@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- <body onload="onLoadBody()">
+    <script>
+            function onLoadBody(){
+                console.log("Body is loaded")
+            }
+    </script>
+</body> -->
+
+
+    <body onresize="resizeFunction()">
+
+        <img src = "../modi.jpeg" alt= "modi" onerror="imgLoadingError()"/>
+
+        <script>
+            function resizeFunction(){
+                console.log("Window is resized")
+            }
+
+            function imgLoadingError(){
+                console.log("Error in loading the image")
+            }
+
+        </script>
+
+    </body>
+</html>
