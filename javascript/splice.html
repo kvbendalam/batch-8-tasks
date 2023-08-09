@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+
+        fruits.splice(2, 0, "Lemon")
+
+        console.log(fruits)
+
+        fruits.splice(3,0, "Apple")
+
+        console.log(fruits)
+
+
+        fruits.splice(3, 1);
+
+        console.log(fruits)
+
+
+        fruits.splice(4,1);
+
+        console.log(fruits)
+
+
+        fruits.splice(3,1)
+
+        console.log(fruits)
+
+
+        // fruits.splice(2, 0, "Lemon", "Kiwi");
+
+
+        // console.log(fruits)
+
+        // //["Banana" "Orange", "Lemon", "Kiwi", "Apple", "Mango"]
+        // fruits.splice(2, 1);
+        // console.log(fruits)
+    </script>
+</body>
+</html>
