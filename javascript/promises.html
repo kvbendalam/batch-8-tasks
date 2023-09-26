@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log(1);
+        let promise = new Promise((resolve, reject)=>{
+            setTimeout(function(){
+                resolve(5);
+                console.log("Promise is completed");
+            },5000)
+        })
+        console.log(2);
+
+        promise.then((r)=>{
+            console.log(r);
+        })
+
+        let promise2 = new Promise((resolve, reject)=>{
+            setTimeout(function(){
+                reject("Error")
+            },6000)
+        })
+
+
+        promise2.catch((e)=>{
+            console.log(e)
+        })
+    </script>
+</body>
+</html>

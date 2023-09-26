@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia Search</title>
+    <style>
+        .container{
+            margin:0 auto;
+            width:50%;
+            text-align: center;
+        }
+
+        #inputBox{
+            border: 2px solid black;
+            width:80%;
+            height:50px;
+        }
+
+        #btn{
+            width:40%;
+            height:40px;
+            color:black;
+            background-color: grey;
+            margin:10px;
+            border:1px solid black;
+        }
+
+        #result{
+            font-size: 24px;
+            height:50px;
+            color:black;
+            border-radius: 1px solid black;
+            margin:0 auto;
+            width:50%;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Wikipedia search</h1>
+        <input type="text" value="" id="inputBox"/>
+        <br/>
+        <input type="button" value="Search" id="btn" onclick="printSearchValue()"/>
+        <p id="result" style="display:none"></p>
+    </div>
+    <script>
+       function printSearchValue(){
+        var inputBox = document.getElementById("inputBox");
+        var result = document.getElementById("result")
+        result.style.display = "block";
+        result.innerHTML = inputBox.value;
+        inputBox.value = " "
+       }
+    </script>
+</body>
+</html>

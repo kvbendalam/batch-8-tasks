@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Person{
+            constructor(name, age,  mobile){
+                this.name = name;
+                this.age = age;
+                this.mobile = mobile;
+            }
+
+            walk(){
+                console.log(this.name, "is Walking")
+            }
+
+            run(){
+                console.log("Running")
+            }
+        }
+
+       class Student extends Person{
+            constructor(name, age, mobile, idnumber, rank){
+                super(name,age, mobile);
+                this.idnumber = idnumber;
+                this.rank = rank;
+            }
+
+            examResult(){
+                console.log("Student is promoted")
+            }
+       }
+
+       var student1 = new Student("Krishna", 28, 29292929, 110089, 2)
+       console.log(student1);
+
+       student1.walk();
+       student1.examResult();
+       student1.run();
+
+       class Employee extends Person{
+        constructor(name, age, mobile, profession){
+            super(name, age, mobile);
+            this.profession = profession;
+        }
+       }
+
+       var emp = new Employee("Vamsi", 28, 229929292, "Software Engineer")
+       console.log(emp)
+    
+    </script>
+</body>
+</html>
