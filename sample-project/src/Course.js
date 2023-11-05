@@ -13,7 +13,7 @@ export default class Course extends Component {
         return (
             <>
                 <p className="first">{this.props.data}</p >
-                <p style={{ backgroundColor: "red", fontSize: "48px", color: "black" }}>This example tag for inline styles</p>
+                <p style={{ backgroundColor: "blue", fontSize: "48px", color: "black" }}>This example tag for inline styles</p>
             </>
         )
     }
