@@ -66,24 +66,24 @@ async function deleteEmp(id) {
     }
 }
 
-async function main() {
-    // const employee = await readEmployee()
-    // console.log(employee)
+// async function main() {
+// const employee = await readEmployee()
+// console.log(employee)
 
-    // const emp = await readEmployeeById(5)
-    // console.log(emp)
+// const emp = await readEmployeeById(5)
+// console.log(emp)
 
-    // const newEmp = await insertEmployee(6, "Vamsi", "Mumbai", "300000", 49)
-    // console.log(newEmp)
+// const newEmp = await insertEmployee(6, "Vamsi", "Mumbai", "300000", 49)
+// console.log(newEmp)
 
-    // const updateEmp = await updateEmployee(1, "Calcutta")
-    // console.log(updateEmp)
+// const updateEmp = await updateEmployee(1, "Calcutta")
+// console.log(updateEmp)
 
-    // const del = await deleteEmp(5)
-    // console.log(del)
-}
+// const del = await deleteEmp(5)
+// console.log(del)
+// }
 
 // main()
 
 
-module.exports = { readEmployee, readEmployeeById, insertEmployee }
+module.exports = { readEmployee, readEmployeeById, insertEmployee, updateEmployee, deleteEmp }
